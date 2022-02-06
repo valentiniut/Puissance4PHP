@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion |{% endblock %}
+
+{% block body %}
+
+    <div class="card text-center mb-3">
+        <div class="card-header text-white btn-gradient">Connexion</div>
+        <div class="card-body">
+            <div class="mb-3">
+                <i class="fas fa-user-circle fa-8x"></i>
+            </div>
+            
+            <div class="mb-5">
+                <p class="card-text">Saisissez vos infromations de connexion :</p>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><i class="fas fa-user"></i> Nom d'utilisateur</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+
+            <label for="inputPassword5" class="form-label"><i class="fas fa-key"></i> Mot de passe</label>
+            <input type="password" id="inputPassword5" class="form-control">
+        </div>
+    </div>
+    <a href="{{ path('accueil')}}"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i> Retour</button></a>
+{% endblock %}
