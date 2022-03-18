@@ -1,5 +1,3 @@
-/* $main-color-1 : #fc5c7d;
-$main-color-2 : #6a82fb; */
 * {font-family: 'Roboto';}
 
 .mainGradient { background: linear-gradient(to right, #fc5c7d, #6a82fb) ;}
