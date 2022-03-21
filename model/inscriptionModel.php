@@ -1,7 +1,7 @@
 <?php
 require '../bdd/connexion.php';
 echo 'Appel du moddel';
-require '../controller.php';
+require '../controller/inscriptionController.php';
 controller();
 require '../vue/inscriptionView.php';
 ?>
