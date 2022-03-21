@@ -1,6 +1,8 @@
-<?php include 'gamegrid.php'; ?>
+<?php include 'gamegrid.php';?>
 
-<?php $title = "Puissance  4"; ?>
+<?php $title = "Puissance  4";
+
+?>
 
 <?php ob_start(); ?>
 
