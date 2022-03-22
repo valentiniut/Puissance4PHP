@@ -1,17 +1,30 @@
+/* Police d'écriture */
 * {font-family: 'Roboto';}
 
+/* Dégradé (boutons, encard titre de card, ...) */
 .mainGradient { background: linear-gradient(to right, #fc5c7d, #6a82fb) ;}
 .btn-gradient { color: #FFF; background-image: linear-gradient(to left, #fc5c7d, #6a82fb) ;}
 .btn-gradient:hover { background-image: linear-gradient(to left, #ffa3b6, #b8c3ff) ;}
 
+/* Arrière plan */
 html { background-image: linear-gradient(to right, #fc5c7d, #6a82fb);}
+/* Fond de page */
 body { background: #F5F5F5; margin: 1em auto; max-width: 800px; width: 95%; padding: 1em;}
+
+/* Boutons connexion / inscription dans le coin en haut à droite de la page*/
 .account-menu { text-align: right; width: 100% }
+
+/* Leaderboard */
 /* .leaderboard { float: right; } */
-footer { text-align: center; padding-top: 50px;}
 .goldTrophy { color: #ffc107;}
 .silverTrophy { color: #adb5bd; }
 .bronzeTrophy { color: #653208; }
 
+/* affichage des flèches (chevrons) au dessus des colonnes */
 .fa-chevron-down { opacity:0; }
 .fa-chevron-down:hover { opacity:1; cursor: pointer; }
+
+.enable-chevron { opacity: 1};
+
+/* Pied de page */
+footer { text-align: center; padding-top: 50px;}

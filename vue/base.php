@@ -15,7 +15,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Police Roboto -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-        <link rel="stylesheet" type="text/css" href="main.css" />
+        <!-- Fichier css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- Fichier js -->
+        <script type="text/javascript" scr="js/script.js"></script>
     </head>
     <body>
         <?php 
@@ -29,8 +32,8 @@
         </h1>
 
         <div class="account-menu">
-            <a href="register.php"><button type="button" class="btn btn-gradient"><i class="fas fa-user-plus"></i> Inscription</button></a>
-            <a href="login.php"><button type="button" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</button></a>
+            <a href="?page=register"><button type="button" class="btn btn-gradient"><i class="fas fa-user-plus"></i> Inscription</button></a>
+            <a href="?page=login"><button type="button" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</button></a>
         </div>
         <br/>
 

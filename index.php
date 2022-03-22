@@ -1,23 +1,21 @@
-<?php include 'gamegrid.php';?>
+<?php
 
-<?php $title = "Puissance  4";
+require 'controller/controllers.php';
 
-?>
-
-<?php ob_start(); ?>
-
-    <div class="leaderboard">
-    <div class="card border-primary mb-3" style="max-width: 18rem;">
-        <div class="card-header text-white btn-gradient border-primary"><i class="fas fa-trophy"></i> Meilleures scores</div>
-        <div class="card-body text-primary">
-            <p class="card-text"><i class="fas fa-trophy goldTrophy"></i> Lorem Ipsum</p>
-            <p class="card-text"><i class="fas fa-trophy silverTrophy"></i> Lorem Ipsum</p>
-            <p class="card-text"><i class="fas fa-trophy bronzeTrophy"></i> Lorem Ipsum</p>
-        </div>
-    </div>
-
-    <?= $gamegrid ?>
-    
-<?php $content = ob_get_clean(); ?>
-    
-<?php require('template.php'); ?>
+// router (url: index.php?page={lapage})
+if (isset($_GET['page'])) {
+    if ($_GET['page'] == 'login') {
+        login();
+    }
+    elseif ($_GET['page'] == 'register') {
+        register();
+    }
+    else {
+        echo 'ERREUR: La page demandée n\'existe pas.</br>';
+        echo '<a href="index.php">Retour à l\'accueil</a>';
+    }
+}
+else {
+    // par défaut
+    accueil();
+}

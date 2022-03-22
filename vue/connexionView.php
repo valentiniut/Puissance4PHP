@@ -1,21 +1,21 @@
-<?php $title = "Inscription | Puissance  4"; ?>
+<?php $title = "Connexion | Puissance  4"; ?>
 
 <?php ob_start(); ?>
 
     <div class="card text-center mb-3">
-        <div class="card-header text-white btn-gradient">Inscription</div>
+        <div class="card-header text-white btn-gradient">Connexion</div>
         <div class="card-body">
             <div class="mb-3">
-                <i class="fas fa-user-plus fa-8x"></i>
+                <i class="fas fa-user-circle fa-8x"></i>
             </div>
 
             <div class="mb-5">
-                <p class="card-text">Saisissez vos infromations de connexion :</p>
+                <p class="card-text">Saisissez vos informations de connexion :</p>
             </div>
 
             <!-- TODO : formulaire à modifier avec les champs nécessaires -->
 
-            <form action="inscription.php" method="POST">
+            <form action="connexion.php" method="POST">
                 <div class="mb-3">
                     <label for="inputEmail" class="form-label"><i class="fas fa-user"></i> Nom d'utilisateur</label>
                     <input type="text" class="form-control" id="inputEmail">
@@ -28,10 +28,11 @@
 
                 <button type="submit" class="btn btn-gradient"><i class="fas fa-check"></i> Valider</button>
             </form>
+
         </div>
     </div>
-    <a href="index.php"><button type="button" class="btn btn-outline-secondary"><i
-                class="fas fa-chevron-left"></i> Retour</button></a>
+    <a href="index.php"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i>
+            Retour</button></a>
 
 <?php $content = ob_get_clean(); ?>
 
