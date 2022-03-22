@@ -1,11 +1,7 @@
 <?php
+    // import du modèle
+    require 'model/accueilModel.php';
 
-// import du modèle correspondant
-require 'model/accueilModel.php';
-
-function controller() {
     // import de la vue
     require 'vue/accueilView.php';
-}
-
 ?>

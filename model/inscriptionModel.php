@@ -1,8 +1,5 @@
 <?php
     //require 'bdd/connexion.php';
-    
-    // à compléter
 
-    // function maFonction() {
-    // }
+    // à compléter
 ?>

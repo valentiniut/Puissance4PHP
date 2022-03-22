@@ -18,7 +18,7 @@
         <!-- Fichier css -->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <!-- Fichier js -->
-        <script type="text/javascript" scr="js/script.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <?php 
