@@ -1,14 +1,11 @@
 <?php
 
-require 'controller/controllers.php';
-
 // router (url: index.php?page={lapage})
 if (isset($_GET['page'])) {
-    if ($_GET['page'] == 'login') {
-        login();
-    }
-    elseif ($_GET['page'] == 'register') {
-        register();
+    $controllerPath = 'controller/'.$_GET['page'].'Controller.php';
+    if (file_exists($controllerPath)) {
+        require $controllerPath;
+        controller();
     }
     else {
         echo 'ERREUR: La page demandée n\'existe pas.</br>';
@@ -17,5 +14,6 @@ if (isset($_GET['page'])) {
 }
 else {
     // par défaut
-    accueil();
+    require 'controller/accueilController.php';
+    controller();
 }

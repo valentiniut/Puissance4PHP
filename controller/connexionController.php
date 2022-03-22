@@ -3,7 +3,7 @@
 // import du modèle correspondant
 require 'model/connexionModel.php';
 
-function login() {
+function controller() {
     // import de la vue
     require 'vue/connexionView.php';
 }
