@@ -30,9 +30,9 @@
             </form>
         </div>
     </div>
-    <a href="index.php"><button type="button" class="btn btn-outline-secondary"><i
+    <a href="../index.php"><button type="button" class="btn btn-outline-secondary"><i
                 class="fas fa-chevron-left"></i> Retour</button></a>
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require('vue/base.php'); ?>
+<?php require('header.php'); ?>

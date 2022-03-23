@@ -1,7 +1,7 @@
 <?php
     // import du modèle
-    require 'model/inscriptionModel.php';
+    require '../model/inscriptionModel.php';
 
     // import de la vue
-    require 'vue/inscriptionView.php';
+    require '../vue/inscriptionView.php';
 ?>

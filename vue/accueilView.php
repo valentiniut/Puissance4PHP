@@ -1,4 +1,4 @@
-<?php include 'vue/gamegrid.php';?>
+<?php include 'gamegrid.php';?>
 
 <?php $title = "Puissance  4";
 
@@ -20,4 +20,4 @@
     
 <?php $content = ob_get_clean(); ?>
     
-<?php require('vue/base.php'); ?>
+<?php require('base.php'); ?>

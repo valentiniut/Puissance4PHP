@@ -18,6 +18,7 @@ CREATE TABLE partie (
   joueurDeux INT NOT NULL,
   grille VARCHAR(255) NOT NULL, -- matrice de l'état du jeu au moment x
   enCour BOOLEAN, -- True partie en cours, False finie
+  tourJoueur INT NOT NULL, -- id du joueur qui joue le tour
   CONSTRAINT FK_PartieUtilisateur1 FOREIGN KEY (joueurUn)
   REFERENCES utilisateur(id),
   CONSTRAINT FK_PartieUtilisateur2 FOREIGN KEY (joueurDeux)

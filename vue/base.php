@@ -32,8 +32,8 @@
         </h1>
 
         <div class="account-menu">
-            <a href="?page=inscription"><button type="button" class="btn btn-gradient"><i class="fas fa-user-plus"></i> Inscription</button></a>
-            <a href="?page=connexion"><button type="button" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</button></a>
+            <a href="controller/inscriptionController.php"><button type="button" class="btn btn-gradient"><i class="fas fa-user-plus"></i> Inscription</button></a>
+            <a href="controller/connexionController.php"><button type="button" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</button></a>
         </div>
         <br/>
 
