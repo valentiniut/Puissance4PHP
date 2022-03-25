@@ -15,7 +15,8 @@ if (isset($_POST['inputIdentifiant'])
         $identifiant = htmlspecialchars($_POST['inputIdentifiant']);
         $mdp = htmlspecialchars($_POST['inputPassword']);
 
-        if (userAuth($identifiant, $mdp)) {
+        $a = new connexionModel();
+        if ($a->userAuth($identifiant, $mdp)) {
             $_SESSION["authentificationAccordee"] = true;
             header('Location: compteController.php');
             exit();
