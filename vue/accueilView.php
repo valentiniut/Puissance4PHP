@@ -16,6 +16,11 @@
         </div>
     </div>
 
+    <div class="row justify-content-between">
+        <button class="btn btn-lg btn-primary text-start col-4"><i class="fas fa-user"></i> Joueur 1</button>
+        <button class="btn btn-lg btn-danger text-end col-4">Joueur 2 <i class="fas fa-user"></i></button>
+    </div>
+
     <?= $gamegrid ?>
     
 <?php $content = ob_get_clean(); ?>
