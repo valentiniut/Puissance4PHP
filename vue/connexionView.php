@@ -15,13 +15,16 @@
 
             <form action="../controller/connexionController.php" method="POST">
                 <div class="mb-3">
-                    <label for="inputIdentifiant" class="form-label"><i class="fas fa-user"></i> Nom d'utilisateur</label>
-                    <input type="text" class="form-control" name="inputIdentifiant" id="inputIdentifiant" placeholder="Entrez votre identifiant" required>
+                    <label for="inputIdentifiant" class="form-label"><i class="fas fa-user"></i> Nom
+                        d'utilisateur</label>
+                    <input type="text" class="form-control" name="inputIdentifiant" id="inputIdentifiant"
+                           placeholder="Entrez votre identifiant" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label"><i class="fas fa-key"></i> Mot de passe</label>
-                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Entrez votre mot de passe" required>
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control"
+                           placeholder="Entrez votre mot de passe" required>
                 </div>
 
                 <button type="submit" class="btn btn-gradient"><i class="fas fa-check"></i> Valider</button>
@@ -29,8 +32,11 @@
 
         </div>
     </div>
-    <a href="../index.php"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i>
-            Retour</button></a>
+    <a href="../index.php">
+        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i>
+            Retour
+        </button>
+    </a>
 
 <?php $content = ob_get_clean(); ?>
 
