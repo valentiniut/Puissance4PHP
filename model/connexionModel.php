@@ -19,7 +19,6 @@ function userAuth($identifiant, $mdp)
     } catch (Exception $e) {
         return false;
     }
-
 }
 
 ?>
