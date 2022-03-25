@@ -14,8 +14,8 @@ CREATE TABLE partie (
   nom VARCHAR(255) NOT NULL, -- nom de la partie
   hauteur INT NOT NULL, -- hauteur de la grille 10 max
   largeur INT NOT NULL, -- largeur de la grille 10 max
-  joueurUn INT NOT NULL,
-  joueurDeux INT NOT NULL,
+  joueurUn INT,
+  joueurDeux INT,
   grille VARCHAR(255) NOT NULL, -- matrice de l'état du jeu au moment x
   enCour BOOLEAN, -- True partie en cours, False finie
   tourJoueur INT NOT NULL, -- id du joueur qui joue le tour
