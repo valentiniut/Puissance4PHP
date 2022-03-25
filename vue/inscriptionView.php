@@ -15,15 +15,15 @@
 
             <!-- TODO : formulaire à modifier avec les champs nécessaires -->
 
-            <form action="inscription.php" method="POST">
+            <form action="inscriptionController.php" method="POST">
                 <div class="mb-3">
-                    <label for="inputEmail" class="form-label"><i class="fas fa-user"></i> Nom d'utilisateur</label>
-                    <input type="text" class="form-control" id="inputEmail">
+                    <label for="inputIdentifiant" class="form-label"><i class="fas fa-user"></i> Nom d'utilisateur</label>
+                    <input type="text" class="form-control" id="inputIdentifiant" name="inputIdentifiant">
                 </div>
 
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label"><i class="fas fa-key"></i> Mot de passe</label>
-                    <input type="password" id="inputPassword" class="form-control">
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control">
                 </div>
 
                 <button type="submit" class="btn btn-gradient"><i class="fas fa-check"></i> Valider</button>
