@@ -27,6 +27,6 @@ body { background: #F5F5F5; margin: 1em auto; max-width: 800px; width: 95%; padd
 /* Pied de page */
 footer { text-align: center; padding-top: 50px;}
 
-#erreurInscription {
+.erreur {
 	color: red;
 }

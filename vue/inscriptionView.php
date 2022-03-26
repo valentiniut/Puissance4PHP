@@ -15,12 +15,11 @@
                 <p class="card-text">Saisissez vos infromations de connexion :</p>
             </div>
             <?php
-                if (isset($_POST['inputIdentifiant'])) {   
-                    $a = new InscriptionModel();
-                    if($a->userExist($identifiant)) {
+                if (isset($_SESSION['UserExist'])) {
+                    if ($_SESSION['UserExist']) {
             ?>
             <!-- Message d'erreur -->
-            <div id="erreurInscription">
+            <div class="erreur">
                 Inscription impossible : le nom d'utilisateur est déjà pris.
             </div>
             <?php
@@ -49,11 +48,3 @@
 <?php $content = ob_get_clean(); ?>
 
 <?php require('header.php'); ?>
-
-<?php
-    if (isset($_SESSION['authentificationAccordee'])) {
-        echo $_SESSION['authentificationAccordee'];
-    } else {
-        echo "NotSet";
-    }
-?>
