@@ -1,5 +1,4 @@
 <!-- Fichier servant de modèle réutilisable sur les autres pages -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +31,20 @@ $color2 = ($nb == 1) ? "#6a82fb" : '#fc5c7d';
 </h1>
 
 <div class="account-menu">
+    <?php
+        if (isset($_SESSION['authentificationAccordee'])) {
+            if ($_SESSION['authentificationAccordee']) {
+    ?>
+        <a href="connexionController.php"><button type="button" class="btn"><i class="fas fa-sign-out-alt"></i> Déconnexion</button></a>
+    <?php
+            } else {
+    ?>
     <a href="inscriptionController.php"><button type="button" class="btn btn-gradient"><i class="fas fa-user-plus"></i> Inscription</button></a>
     <a href="connexionController.php"><button type="button" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</button></a>
+    <?php
+            }
+        }
+    ?>
 </div>
 <br/>
 

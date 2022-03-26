@@ -12,7 +12,17 @@
             <div class="mb-5">
                 <p class="card-text">Saisissez vos informations de connexion :</p>
             </div>
-
+            <?php 
+                if (isset($_SESSION['ErreurAuthentification'])) {
+                    if ($_SESSION['ErreurAuthentification']) {
+            ?>
+            <div class="erreur">
+                Erreur dans l'authentification : Votre identifiant et/ou votre mot de passe sont incorrects.
+            </div>
+            <?php
+                    }
+                }
+            ?>
             <form action="../controller/connexionController.php" method="POST">
                 <div class="mb-3">
                     <label for="inputIdentifiant" class="form-label"><i class="fas fa-user"></i> Nom

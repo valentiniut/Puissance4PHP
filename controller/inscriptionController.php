@@ -3,6 +3,7 @@
     // import du modèle
     require '../model/inscriptionModel.php';
 
+	$_SESSION["authentificationAccordee"] = false;
 	$_SESSION['UserExist'] = false;
     if (isset($_POST['inputIdentifiant']) && isset($_POST['inputPassword'])) {
 	    if ($_POST['inputIdentifiant'] != null && $_POST['inputIdentifiant'] != "" && $_POST['inputPassword'] != null && $_POST['inputPassword'] != "") {

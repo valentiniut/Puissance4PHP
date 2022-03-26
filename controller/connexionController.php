@@ -3,6 +3,8 @@ session_start();
 // import du modèle
 require_once '../model/connexionModel.php';
 
+$_SESSION["authentificationAccordee"] = false;
+$_SESSION["ErreurAuthentification"] = false;
 // Controlle du formulaire de connexion
 if (isset($_POST['inputIdentifiant'])
     && isset($_POST['inputPassword'])) {
@@ -21,12 +23,10 @@ if (isset($_POST['inputIdentifiant'])
             header('Location: compteController.php');
             exit();
         } else {
-            echo "<h1>erreur</h1>";
+            $_SESSION["ErreurAuthentification"] = true;
         }
     }
 }
 // import de la vue
 require_once '../vue/connexionView.php';
-
-
 ?>
