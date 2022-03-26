@@ -1,6 +1,8 @@
-<?php $title = "Inscription | Puissance  4"; ?>
+<?php
+    $title = "Inscription | Puissance  4"; 
+?>
 
-<?php ob_start(); ?>
+<?php ob_start();?>
 
     <div class="card text-center mb-3">
         <div class="card-header text-white btn-gradient">Inscription</div>
@@ -12,18 +14,29 @@
             <div class="mb-5">
                 <p class="card-text">Saisissez vos infromations de connexion :</p>
             </div>
-
-            <!-- TODO : formulaire à modifier avec les champs nécessaires -->
-
+            <?php
+                if (isset($_POST['inputIdentifiant'])) {   
+                    $a = new InscriptionModel();
+                    if($a->userExist($identifiant)) {
+            ?>
+            <!-- Message d'erreur -->
+            <div id="erreurInscription">
+                Inscription impossible : le nom d'utilisateur est déjà pris.
+            </div>
+            <?php
+                    }
+                }
+            ?>
+            <!-- Formulaire d'inscription -->
             <form action="inscriptionController.php" method="POST">
                 <div class="mb-3">
                     <label for="inputIdentifiant" class="form-label"><i class="fas fa-user"></i> Nom d'utilisateur</label>
-                    <input type="text" class="form-control" id="inputIdentifiant" name="inputIdentifiant">
+                    <input required placeholder="Saisir votre identifiant" type="text" class="form-control" id="inputIdentifiant" name="inputIdentifiant">
                 </div>
 
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label"><i class="fas fa-key"></i> Mot de passe</label>
-                    <input type="password" id="inputPassword" name="inputPassword" class="form-control">
+                    <input required type="password" placeholder="Saisir votre mot de passe"  id="inputPassword" name="inputPassword" class="form-control">
                 </div>
 
                 <button type="submit" class="btn btn-gradient"><i class="fas fa-check"></i> Valider</button>
@@ -36,3 +49,11 @@
 <?php $content = ob_get_clean(); ?>
 
 <?php require('header.php'); ?>
+
+<?php
+    if (isset($_SESSION['authentificationAccordee'])) {
+        echo $_SESSION['authentificationAccordee'];
+    } else {
+        echo "NotSet";
+    }
+?>
