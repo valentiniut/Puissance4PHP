@@ -10,33 +10,10 @@
     <div class="container text-center fa-4x">
         <div class="row" style="margin: -15px;">
             <div class="col">
-                <i class="fa-solid fa-chevron-down" id="col1" onClick="chevron(this.id)"></i>
+                <i class="fas fa-circle"></i>
             </div>
             <div class="col">
-                <i class="fa-solid fa-chevron-down" id="col2" onClick="chevron(this.id)"></i>
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-chevron-down" id="col3" onClick="chevron(this.id)"></i>
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-chevron-down" id="col4" onClick="chevron(this.id)"></i>
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-chevron-down" id="col5" onClick="chevron(this.id)"></i>
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-chevron-down" id="col6" onClick="chevron(this.id)"></i>
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-chevron-down" id="col7" onClick="chevron(this.id)"></i>
-            </div>
-        </div>
-        <div class="row" style="margin: -15px;">
-            <div class="col" id="case1">
-                <i class="fas fa-circle text-danger"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle text-primary"></i>
+                <i class="fas fa-circle"></i>
             </div>
             <div class="col">
                 <i class="fas fa-circle"></i>
@@ -55,55 +32,6 @@
             </div>
         </div>
         <div class="row" style="margin: -15px;">
-            <div class="col colonne1">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle text-danger"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle text-primary"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-        </div>
-        <div class="row" style="margin: -15px;">
-            <div class="col colonne1">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle text-danger"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle text-primary"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-            <div class="col">
-                <i class="fas fa-circle"></i>
-            </div>
-        </div>
-        <div class="row" style="margin: -15px;">
-            <div class="col colonne1">
-                <i class="fas fa-circle"></i>
-            </div>
             <div class="col">
                 <i class="fas fa-circle"></i>
             </div>
@@ -114,7 +42,10 @@
                 <i class="fas fa-circle text-danger"></i>
             </div>
             <div class="col">
-                <i class="fas fa-circle text-primary"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle"></i>
             </div>
             <div class="col">
                 <i class="fas fa-circle"></i>
@@ -124,17 +55,40 @@
             </div>
         </div>
         <div class="row" style="margin: -15px;">
-            <div class="col colonne1">
-                <i class="fas fa-circle"></i>
+            <div class="col">
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
             </div>
             <div class="col">
                 <i class="fas fa-circle"></i>
             </div>
+        </div>
+        <div class="row" style="margin: -15px;">
             <div class="col">
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle text-primary"></i>
             </div>
             <div class="col">
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
             </div>
             <div class="col">
                 <i class="fas fa-circle text-danger"></i>
@@ -147,20 +101,43 @@
             </div>
         </div>
         <div class="row" style="margin: -15px;">
-            <div class="col colonne1">
-                <i class="fas fa-circle"></i>
+            <div class="col">
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
             </div>
             <div class="col">
                 <i class="fas fa-circle"></i>
             </div>
+        </div>
+        <div class="row" style="margin: -15px;">
             <div class="col">
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle text-danger"></i>
             </div>
             <div class="col">
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle text-primary"></i>
             </div>
             <div class="col">
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle text-primary"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="fas fa-circle text-danger"></i>
             </div>
             <div class="col">
                 <i class="fas fa-circle text-danger"></i>
