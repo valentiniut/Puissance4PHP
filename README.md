@@ -11,7 +11,7 @@ CREATE TABLE utilisateur (
 
 CREATE TABLE partie (
   id INT AUTOINCREMENT PRIMARY KEY,
-  nom VARCHAR(255) NOT NULL, -- nom de la partie
+  nom VARCHAR(255), -- nom de la partie
   hauteur INT NOT NULL, -- hauteur de la grille 10 max
   largeur INT NOT NULL, -- largeur de la grille 10 max
   joueurUn INT,

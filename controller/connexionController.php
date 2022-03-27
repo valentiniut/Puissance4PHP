@@ -20,6 +20,7 @@ if (isset($_POST['inputIdentifiant'])
         $a = new connexionModel();
         if ($a->userAuth($identifiant, $mdp)) {
             $_SESSION["authentificationAccordee"] = true;
+            $_SESSION["identifiant"] = $identifiant;
             header('Location: compteController.php');
             exit();
         } else {

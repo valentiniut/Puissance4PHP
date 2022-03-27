@@ -34,14 +34,17 @@ class CompteModel extends connexion {
     function creerPartie($hauteur, $largeur, $createur, $grille) {
         $idCreateur = $this->getIdJoueurByIdentifiant($createur);
         $req = "INSERT INTO partie (hauteur, largeur, joueurUn, grille, enCour, tourJoueur)
-        values (:hauteur, :largeur, :idCreateur, :grille, :enCour, :idCreateur);
-        SELECT LAST_INSERT_ID() as idPartie FROM partie;";
+        values (:hauteur, :largeur, :idCreateur, :grille, :enCour, :idCreateur)";
         $stmt = $this->connect()->prepare($req);
         $stmt->bindValue(":hauteur",$hauteur,PDO::PARAM_INT);
         $stmt->bindValue(":largeur",$largeur,PDO::PARAM_INT);
         $stmt->bindValue(":idCreateur",$idCreateur,PDO::PARAM_INT);
         $stmt->bindValue(":grille",$grille,PDO::PARAM_STR);
-        $stmt->bindValue(":enCour",$idCreateur,PDO::PARAM_INT);
+        $stmt->bindValue(":enCour",1,PDO::PARAM_INT);
+        $stmt->execute();
+
+        $req = "SELECT MAX(id) as idPartie FROM partie";
+        $stmt = $this->connect()->prepare($req);
         $stmt->execute();
         $resultat = $stmt->fetch()['idPartie'];
         $stmt->closeCursor();

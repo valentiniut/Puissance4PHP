@@ -12,16 +12,21 @@
 	}
 
 	$compteModel = new CompteModel();
-    $_SESSION['Bienvenu'] = '<h1>Bienvenu '.$_SESSION["identifiant"].' (Score : '.$compteModel->getScore($_SESSION["identifiant"]).')</h1>';
+    $_SESSION['Bienvenu'] = '<h1>Bienvenue '.$_SESSION["identifiant"].' (Score : '.$compteModel->getScore($_SESSION["identifiant"]).')</h1>';
     $_SESSION['AucunePartieLibre'] = false;
     $_SESSION['PartieIntrouvable'] = false;
     $_SESSION['ValeursInvalides'] = false;
+    $_SESSION['partieAlea'] = false;
+    $_SESSION['partieRech'] = false;
+    $_SESSION['partieCreation'] = false;
 
 	if (isset($_POST['recherchePartie'])) {
 		// Cas recherche partie libre
 		$idPartieLibre = $compteModel->getIdPartieLibre();
 		if ($idPartieLibre != null) {
-			// TODO Redirection vers partie à l'id $idPartieLibre
+            $_SESSION['idPartieLibre'] = $idPartieLibre;
+            $_SESSION['partieAlea'] = true;
+			header('Location: jeuController.php');
 		} else {
 			$_SESSION['AucunePartieLibre'] = true;
 		}
@@ -32,7 +37,9 @@
     	if ($_POST['idPartie'] != null) {
     		$idPartie = $_POST['idPartie'];
     		if ($compteModel->partieExist($idPartie)) {
-    			// TODO Redirection vers partie à l'id $idPartie
+                $_SESSION['idRecherche'] = $idPartie;
+                $_SESSION['partieRech'] = true;
+                header('Location: jeuController.php');
     		} else {
     			$_SESSION['PartieIntrouvable'] = true;
     		}
@@ -51,8 +58,10 @@
     								  				  $_POST['largeur'],
     								  				  $_SESSION['identifiant'],
     								  				  $grille);
-    		echo $idPartieCree;
     		// TODO Redirection vers la nouvelle partie à l'id $idPartieCree
+            $_SESSION['idPartieCree'] = $idPartieCree;
+            $_SESSION['partieCreation'] = true;
+            header('Location: jeuController.php');
     	} else {
     		$_SESSION['ValeursInvalides'] = true;
     	}
