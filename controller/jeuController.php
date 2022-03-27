@@ -40,7 +40,7 @@ if (isset($_SESSION['partieCreation'])) {
         $jeuModel->recupererGrille($_SESSION['idPartieCree']);
         $hauteur = $_SESSION['hauteurG'];
         $largeur = $_SESSION['largeurG'];
-        $grille = json_encode($_SESSION['grille']);
+        $grille = $_SESSION['grille'];
     }
 }
 
